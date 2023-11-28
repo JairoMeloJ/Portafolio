@@ -38,14 +38,10 @@ const Footer = () => {
           <p>
             {' '}
             💻 - Construido por{' '}
-            <button
-              type="button"
-              onClick={() => setModal(true)}
-              className={styles.userBtn}
-            >
-              @AntonioAyola{' '}
+            <button type="button" className={styles.userBtn}>
+              @jairogabriel_{' '}
             </button>{' '}
-            con 🖤 en 2022 &#x1F1F2;&#x1F1FD;
+            con 🖤 en 2023
           </p>
           <img src={line} alt="" className={styles.svg} />
           <img src={line} alt="" className={styles.svg} />
@@ -65,9 +61,9 @@ const Footer = () => {
         <p className={styles.visitas}>
           Num. Visitas
           <img
-            width="20px"
-            height="10px"
-            src="https://counter1.stat.ovh/private/contadorvisitasgratis.php?c=1am2er4yl9uq6du4qfz5hdqc3enw75xt"
+            width="200px"
+            height="100px"
+            src="https://counter8.optistats.ovh/private/contadorvisitasgratis.php?c=24xcarhazjgz7ecrgkxqfgzc5w9g7xx2"
             border="0"
             title="contador de visitas"
             alt="contador de visitas"

@@ -5,6 +5,21 @@ import { constants } from '../../utils/constants';
 
 const skills = [
   {
+    name: 'HTML',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+    href: 'https://www.w3.org/html/',
+  },
+  {
+    name: 'Bootstrap',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
+    href: 'https://getbootstrap.com',
+  },
+  {
+    name: 'Materialize',
+    img: 'https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg',
+    href: 'https://materializecss.com/',
+  },
+  {
     name: 'CSS',
     img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
     href: 'https://www.w3schools.com/css/',
@@ -15,14 +30,9 @@ const skills = [
     href: 'https://git-scm.com/',
   },
   {
-    name: 'HTML',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
-    href: 'https://www.w3.org/html/',
-  },
-  {
-    name: 'Javascript',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
-    href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    name: 'Postman',
+    img: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
+    href: 'https://postman.com',
   },
   {
     name: 'MySQL',
@@ -30,19 +40,14 @@ const skills = [
     href: 'https://www.mysql.com/',
   },
   {
-    name: 'NodeJS',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
-    href: 'https://nodejs.org',
-  },
-  {
-    name: 'Postman',
-    img: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
-    href: 'https://postman.com',
-  },
-  {
     name: 'Python',
     img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
     href: 'https://www.python.org',
+  },
+  {
+    name: 'NodeJS',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
+    href: 'https://nodejs.org',
   },
   {
     name: 'React',
@@ -50,34 +55,9 @@ const skills = [
     href: 'https://reactjs.org/',
   },
   {
-    name: 'Bootstrap',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
-    href: 'https://getbootstrap.com',
-  },
-  {
-    name: 'Java',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg',
-    href: 'https://www.java.com',
-  },
-  {
-    name: 'Materialize',
-    img: 'https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg',
-    href: 'https://materializecss.com/',
-  },
-  {
-    name: 'React Native',
-    img: 'https://reactnative.dev/img/header_logo.svg',
-    href: 'https://reactnative.dev/',
-  },
-  {
-    name: 'Redux',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
-    href: 'https://redux.js.org',
-  },
-  {
-    name: 'Webpack',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg',
-    href: 'https://webpack.js.org',
+    name: 'Javascript',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+    href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   },
 ];
 function About() {
@@ -85,9 +65,10 @@ function About() {
     <div className={styles.me}>
       <h2>Quien soy y más sobre mi</h2>
       <p>
-        Me llamo Jairo Melo soy un desarrollador de Software de México con gran
-        afición al mundo Tecnológico, autodidacta y apasionado por aprender más
-        todos los días sobre nuevas tecnologias. <br />
+        Me llamo Jairo Melo soy un desarrollador de Software de República
+        Dominicana con gran afición al mundo Tecnológico, autodidacta y
+        apasionado por aprender más todos los días sobre nuevas tecnologias.{' '}
+        <br />
         <br />A lo largo de mi aventura en el mundo del desarrollo web, me
         involucre en el desarrollo de varios proyectos, proponiéndome retos, los
         cuales me enseñaron a corregir mis propios errores al desarrollar
@@ -255,7 +236,6 @@ function Studies() {
             • Curso de SCRUM - Linkedin
           </a>
         </li>
-
         <li>
           <a
             title="Certificado Fundamentos ing."
@@ -306,27 +286,7 @@ function Studies() {
             • Curso de GIT - Udemy
           </a>
         </li>
-        {/*  <li>
-          <a
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.IntroduccionAPIRest}
-          >
-            • Escuela Js - Platzi - 20%
-          </a>
-        </li> */}
       </ul>
-    </>
-  );
-}
-function CV() {
-  return (
-    <>
-      <h2>CV Privado</h2>
-      <p>Dirigete a la sección de contacto.</p>
-      <button type="button" className="boxShadow" disabled>
-        DESCARGA CV
-      </button>
     </>
   );
 }
@@ -348,29 +308,14 @@ function AboutMe() {
     <section className={styles.aboutMe} id="about">
       <div className={styles.aboutContainer}>
         <div className={styles.AboutLeft}>
-          <span>Actualizado el 5 de Marzo, 2022</span>
+          <span>Actualizado el 28 de Noviembre, 2023</span>
           <div className={styles.leftImg}>
             <img src={hero} alt="Jairo Melo Profile" className={styles.img} />
-            <h1>{'<Jairo Melo/>'}</h1>
-            <a
-              title="Buy me a coffe"
-              className={styles.supportBtn}
-              href={constants.profilesUrls.buymeacoffee}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              APOYAME
-            </a>
-            {/* <button className={styles.supportBtn} type="button">
-              APOYAME
-            </button> */}
-            <p>Desarrollo software con ❤️ y ☕️</p>
-            <p> &#x1F1F2;&#x1F1FD;</p>
+            <p>Desarrollado por &lt;Jairo G. Melo /&gt;</p>
           </div>
         </div>
         <div className={styles.AboutRight}>
           <div>
-            {/* <span>Actualizado el 5 de Marzo, 2022</span> */}
             <ul className={styles.tabs}>
               <li className={activeSection === 0 ? styles.active : null}>
                 <button
@@ -381,7 +326,6 @@ function AboutMe() {
                 >
                   about
                 </button>
-                {/* <span className={styles.divider}>|</span> */}
               </li>
               <li className={activeSection === 1 ? styles.active : null}>
                 <button
@@ -392,7 +336,6 @@ function AboutMe() {
                 >
                   skills
                 </button>
-                {/* <span className={styles.divider}>|</span> */}
               </li>
               <li className={activeSection === 2 ? styles.active : null}>
                 <button
@@ -403,7 +346,6 @@ function AboutMe() {
                 >
                   formación
                 </button>
-                {/* <span className={styles.divider}>|</span> */}
               </li>
               <li className={activeSection === 3 ? styles.active : null}>
                 <button
@@ -414,7 +356,6 @@ function AboutMe() {
                 >
                   Certificados
                 </button>
-                {/* <span className={styles.divider}>|</span> */}
               </li>
               <li className={activeSection === 4 ? styles.active : null}>
                 <button
@@ -425,22 +366,7 @@ function AboutMe() {
                 >
                   Experiencia
                 </button>
-                {/* <span className={styles.divider}>|</span> */}
               </li>
-              <li className={activeSection === 5 ? styles.active : null}>
-                <button
-                  type="button"
-                  onClick={() => setActiveSection(5)}
-                  className={styles.tabBtn}
-                  aria-label="cv"
-                >
-                  CV
-                </button>
-                {/* <span className={styles.divider}>|</span> */}
-              </li>
-              {/* <li>
-                <span>Actualizado el 5 de Marzo, 2022</span>
-              </li> */}
             </ul>
             <hr />
           </div>
@@ -450,7 +376,6 @@ function AboutMe() {
             {activeSection === 2 && <Education />}
             {activeSection === 3 && <Studies />}
             {activeSection === 4 && <Experience />}
-            {activeSection === 5 && <CV />}
           </div>
         </div>
       </div>

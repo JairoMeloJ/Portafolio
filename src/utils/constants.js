@@ -2,7 +2,7 @@ export const constants = {
   name: 'Jairo G. Melo',
   avatar: 'https://avatars.githubusercontent.com/u/82292677?v=4',
   profilesUrls: {
-    linkedin: 'https://www.linkedin.com/in/antonio-ayola/',
+    linkedin: 'https://www.linkedin.com/in/jairo-gabriel-melo-07803b260/',
     github: 'https://github.com/JairoMeloJ',
     email: 'jairogmelo02@gmail.com',
     cv: '/04/03/2022.pdf',
