@@ -87,11 +87,11 @@ const Contact = () => {
                 width="300px"
                 height="400px"
                 src={me}
-                alt="antonio Ayola Profile"
+                alt="Jairo Melo Profile"
               />
             </div>
             <div className={styles.details}>
-              <h1>Juan Antonio Ayola Cortes</h1>
+              <h1>Jairo Gabriel Melo Jimenez</h1>
               <p>
                 Estoy disponible en casi todas las redes sociales. Puede
                 enviarme un mensaje, le responderé dentro de las 24 horas.

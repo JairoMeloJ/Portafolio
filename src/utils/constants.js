@@ -1,17 +1,15 @@
 export const constants = {
-  name: 'Antonio Ayola',
-  avatar: 'https://avatars.githubusercontent.com/u/35477201?v=4',
+  name: 'Jairo G. Melo',
+  avatar: 'https://avatars.githubusercontent.com/u/82292677?v=4',
   profilesUrls: {
     linkedin: 'https://www.linkedin.com/in/antonio-ayola/',
-    github: 'https://github.com/Tono2007',
-    email: 'antonio.ayola.cortes@gmail.com',
+    github: 'https://github.com/JairoMeloJ',
+    email: 'jairogmelo02@gmail.com',
     cv: '/04/03/2022.pdf',
     twitter: 'https://twitter.com/Antonio_Ayola_',
-    number: '+52 7711825937',
+    number: '+1 (849) 456-4640',
     whatsapp: 'https://wa.me/527711825937',
-    instagram: 'https://www.instagram.com/antonioayola1/',
-    facebook: 'https://www.facebook.com/tono2007/',
-    buymeacoffee: 'https://www.buymeacoffee.com/antonioayola',
+    instagram: 'https://www.instagram.com/jairogabriel_/',
   },
   icons: {
     linkedin: 'https://i.imgur.com/z5abyyx.png',
@@ -45,7 +43,7 @@ export const constants = {
   language: 'es_mx',
   siteData: {
     siteUrl: 'antonioayola.netlify.app/',
-    siteRepo: 'https://github.com/Tono2007/portafolio',
+    siteRepo: 'https://github.com/JairoMeloJ/Portafolio/',
   },
 };
 export default constants;

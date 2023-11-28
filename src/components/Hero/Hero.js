@@ -30,28 +30,24 @@ function Hero() {
        */}{' '}
       <div className={styles.heroContainer}>
         <div className={styles.heroLeft}>
-          <h4
-            className={isInViewport ? 'useSlideInLeft' : 'useSlideInLeftEnter'}
-          >
-            ¡HOLA MUNDO!
-          </h4>
           <h1>
-            Hi, I&#39;m <span>Antonio Ayola</span>
+            Hola, soy <span>Jairo Melo</span>
           </h1>
 
           <h2>
-            a
+            -
             <Typewriter
               words={[
-                ' Profesional Coder',
+                ' Cloud DevOps Engineer',
+                ' Computer Science Engineer',
                 ' Frontend Developer',
-                ' Software Developer',
+                ' Backend Developer',
               ]}
-              loop={5}
+              loop={25}
               cursor
               cursorStyle="|"
-              typeSpeed={70}
-              deleteSpeed={50}
+              typeSpeed={40}
+              deleteSpeed={70}
               delaySpeed={1000}
             />
           </h2>
@@ -64,7 +60,7 @@ function Hero() {
           </h3>
           <div className={styles.socialSkills}>
             <div className={`col_1 ${isInViewport ? styles.slideIn : ''}`}>
-              <h5>ENCUENTRAME AQUI</h5>
+              <h5>Metodos de Contacto</h5>
               <div className={styles.socialContainer}>
                 <a
                   title="github contact"
@@ -99,7 +95,7 @@ function Hero() {
               </div>
             </div>
             <div className={`col_1 ${isInViewport ? styles.slideIn : ''}`}>
-              <h5>APRENDIENDO</h5>
+              <h5>Dominio</h5>
               <figure className={styles.skillBtn}>
                 <img
                   width="50px"

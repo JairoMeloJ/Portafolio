@@ -61,26 +61,6 @@ const Header = () => {
     scrollTo(section);
   };
 
-  async function downloadApp() {
-    console.log('👍', 'butInstall-clicked');
-    const promptEvent = window.deferredPrompt;
-    if (!promptEvent) {
-      // The deferred prompt isn't available.
-      console.log('oops, no prompt event guardado en window');
-      return;
-    }
-    // Show the install prompt.
-    promptEvent.prompt();
-    // Log the result
-    const result = await promptEvent.userChoice;
-    console.log('👍', 'userChoice', result);
-    // Reset the deferred prompt variable, since
-    // prompt() can only be called once.
-    window.deferredPrompt = null;
-    // Hide the install button.
-    setIsReadyForInstall(false);
-  }
-
   return (
     <>
       <Suspense fallback={<Loader />}>
@@ -144,11 +124,6 @@ const Header = () => {
                 Recomendaciones
               </a>
             </li>
-            <li className="blog">
-              <a title="blog" href="#!" onClick={() => handleLink('blog')}>
-                blog
-              </a>
-            </li>
             <li className="contact">
               <a
                 title="contacto"
@@ -163,36 +138,6 @@ const Header = () => {
                 <i className={styles.cogBtn} title="Theme Config" />
               </a>
             </li>
-            {/*  <li>
-              <button
-                className={styles.homeBtn}
-                type="button"
-                onClick={() => setModal(true)}
-              >
-                APOYAME
-              </button>
-            </li> */}
-            {isReadyForInstall ? (
-              <li>
-                <button
-                  className={styles.homeBtn}
-                  type="button"
-                  onClick={() => downloadApp(true)}
-                >
-                  Instalar APP
-                </button>
-              </li>
-            ) : (
-              <li>
-                <button
-                  className={styles.homeBtn}
-                  type="button"
-                  onClick={() => setModal(true)}
-                >
-                  VER MAS
-                </button>
-              </li>
-            )}
           </ul>
           {/*  {Mobile && ( */}
           {true && (
@@ -245,11 +190,6 @@ const Header = () => {
                   Recomendaciones
                 </a>
               </li>
-              <li className="blog">
-                <a title="blog" href="#!" onClick={() => handleLink('blog')}>
-                  blog
-                </a>
-              </li>
               <li className="contact">
                 <a
                   title="contacto"
@@ -264,31 +204,6 @@ const Header = () => {
                   <i className={styles.cogBtn} title="Theme Config" />
                 </a>
               </li>
-
-              {isReadyForInstall ? (
-                <li>
-                  <button
-                    className={styles.homeBtn}
-                    type="button"
-                    onClick={() => downloadApp(true)}
-                  >
-                    Instalar APP
-                  </button>
-                </li>
-              ) : (
-                <li>
-                  <button
-                    className={styles.homeBtn}
-                    type="button"
-                    onClick={() => {
-                      setMobile(false);
-                      setModal(true);
-                    }}
-                  >
-                    VER MAS
-                  </button>
-                </li>
-              )}
             </ul>
           )}
 

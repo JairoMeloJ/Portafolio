@@ -1,6 +1,6 @@
 {
-  "short_name": "Antonio Ayola",
-  "name": "Antonio Ayola Portafolio",
+  "short_name": "Jairo Melo",
+  "name": "Jairo Melo Portafolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -24,9 +24,9 @@
   "display": "standalone",
   "display_override": ["standalones", "fullscreen"],
   "background_color": "#ecf0f3",
-  "theme_color": "#66b58f",
+  "theme_color": "#53E1FA",
   "categories": ["education", "entertainment", "lifestyle", "social"],
-  "description": "Antonio Ayola Portafolio",
+  "description": "Jairo Melo Portafolio",
   "dir": "ltr",
   "id": "/v1",
   "lang": "es-MX",
